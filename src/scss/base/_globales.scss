@@ -13,13 +13,6 @@ body {
   font-family: v.$fuentePrincipal;
   background-color: v.$blanco;
   font-size: 1.6rem;
-
-  &.fijar-body{
-    overflow: hidden;
-  }
-  &.body-scroll{
-    padding-top: 8.6rem;
-  }
 }
 p {
   font-size: 2rem;
@@ -29,6 +22,9 @@ p {
   width: 90%;
   max-width: 120rem;
   margin: 0 auto;
+}
+li{
+  list-style: none;
 }
 a {
   text-decoration: none;

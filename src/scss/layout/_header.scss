@@ -1,0 +1,17 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2% 0;
+    color: v.$negro;
+    picture{
+        width: 8%;
+    }
+    nav{
+        display: flex;
+        gap: 10%;
+    }
+}
