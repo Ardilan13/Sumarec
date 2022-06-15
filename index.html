@@ -1,48 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sumarec</title>
-    <link rel="stylesheet" href="build/css/app.css">
+    <link rel="stylesheet" href="build/css/app.css" />
     <script src="build/js/app.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="border">
-        <a class="logo" href="index.html">
-            <picture>
-                <source srcset="build/img/logoBlanco.avif" type="image/avif">
-                <source srcset="build/img/logoBlanco.webp" type="image/webp">
-                <img loading="Lazy" src="build/img/logoBlanco.png" alt="logo Sumarec blanco">
-            </picture>
-        </a>
-        <nav>
-            <a href="">SERVICIOS</a>
-            <a href="">GALERIA</a>
-            <a href="">CONTACTO</a>
-        </nav>
+      <a class="logo" href="index.html">
+        <picture>
+          <source srcset="build/img/logoBlanco.avif" type="image/avif" />
+          <source srcset="build/img/logoBlanco.webp" type="image/webp" />
+          <img
+            loading="Lazy"
+            src="build/img/logoBlanco.png"
+            alt="logo Sumarec blanco"
+          />
+        </picture>
+      </a>
+      <nav>
+        <a href="">SERVICIOS</a>
+        <a href="">GALERIA</a>
+        <a href="">CONTACTO</a>
+      </nav>
     </header>
     <main>
-        <section class="banner">
-
-        </section>
-
-        <section class="nosotros border">
-            <div class="nosotros-text">
-                <h2>¿Quienes Somos?</h2>
-                <p>Somos una compañía que nace en 2022 con el objetivo de brindar soluciones a nuestros futuros cliente,
-                    ofreciendo resultados de calidad en el desarrollo de procesos propios.</p>
+      <section class="banner">
+        <div class="slide">
+          <div class="slide-inner">
+            <input
+              class="slide-open"
+              type="radio"
+              id="slide-1"
+              name="slide"
+              aria-hidden="true"
+              hidden=""
+              checked="checked"
+            />
+            <div class="slide-item">
+              <picture>
+                <source srcset="build/img/constructor.avif" type="image/avif" />
+                <source srcset="build/img/constructor.webp" type="image/webp" />
+                <img
+                  loading="Lazy"
+                  src="build/img/constructor.png"
+                  alt="constructor"
+                />
+              </picture>
             </div>
-            <picture>
-                <source srcset="build/img/logo.avif" type="image/avif">
-                <source srcset="build/img/logo.webp" type="image/webp">
-                <img loading="Lazy" src="build/img/logo.png" alt="logo Sumarec">
-            </picture>
-        </section>
-    </main>
-</body>
+            <input
+              class="slide-open"
+              type="radio"
+              id="slide-2"
+              name="slide"
+              aria-hidden="true"
+              hidden=""
+            />
+            <div class="slide-item">
+              <picture>
+                <source srcset="build/img/constructor.avif" type="image/avif" />
+                <source srcset="build/img/constructor.webp" type="image/webp" />
+                <img
+                  loading="Lazy"
+                  src="build/img/constructor.png"
+                  alt="constructor"
+                />
+              </picture>
+            </div>
+            <input
+              class="slide-open"
+              type="radio"
+              id="slide-3"
+              name="slide"
+              aria-hidden="true"
+              hidden=""
+            />
+            <div class="slide-item">
+              <picture>
+                <source srcset="build/img/constructor.avif" type="image/avif" />
+                <source srcset="build/img/constructor.webp" type="image/webp" />
+                <img
+                  loading="Lazy"
+                  src="build/img/constructor.png"
+                  alt="constructor"
+                />
+              </picture>
+            </div>
+            <label for="slide-3" class="slide-control prev control-1">‹</label>
+            <label for="slide-2" class="slide-control next control-1">›</label>
+            <label for="slide-1" class="slide-control prev control-2">‹</label>
+            <label for="slide-3" class="slide-control next control-2">›</label>
+            <label for="slide-2" class="slide-control prev control-3">‹</label>
+            <label for="slide-1" class="slide-control next control-3">›</label>
+            <ol class="slide-indicador">
+              <li>
+                <label for="slide-1" class="slide-circulo">•</label>
+              </li>
+              <li>
+                <label for="slide-2" class="slide-circulo">•</label>
+              </li>
+              <li>
+                <label for="slide-3" class="slide-circulo">•</label>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
 
+      <section class="nosotros border">
+        <div class="nosotros-text">
+          <h2>¿Quienes Somos?</h2>
+          <p>
+            Somos una compañía que nace en 2022 con el objetivo de brindar
+            soluciones a nuestros futuros cliente, ofreciendo resultados de
+            calidad en el desarrollo de procesos propios.
+          </p>
+        </div>
+        <picture>
+          <source srcset="build/img/logo.avif" type="image/avif" />
+          <source srcset="build/img/logo.webp" type="image/webp" />
+          <img loading="Lazy" src="build/img/logo.png" alt="logo Sumarec" />
+        </picture>
+      </section>
+    </main>
+  </body>
 </html>
