@@ -21,9 +21,10 @@ header {
     a {
       color: v.$blanco;
       font-size: large;
+      transition: all .4s;
 
       &:hover{
-        border-bottom: .3rem solid v.$blanco;
+        border-bottom: .4rem solid v.$blanco;
       }
     }
   }

@@ -17,6 +17,9 @@ body {
 p {
   font-size: 2rem;
   stop-color: v.$negro;
+  margin: 0;
+  text-align: justify;
+  color: v.$negro;
 }
 .contenedor {
   width: 90%;
@@ -49,6 +52,16 @@ img {
   height: auto;
   display: block;
 }
+h2 {
+  font-size: 5.5rem;
+  font-weight: 800;
+}
 .border {
   border-bottom: 0.5rem solid v.$rosa;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  max-width: 90rem;
 }
