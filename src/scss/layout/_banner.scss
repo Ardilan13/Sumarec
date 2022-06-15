@@ -1,20 +1,6 @@
 @use '../base/mixins' as m;
 @use '../base/variables' as v;
 
-.carousel-inner {
-    height: 600px;
-    .carousel-item {
-        width: 100%;
-        height: 800px;
-        img{
-            object-fit: cover;
-            margin: auto;
-            width: 50%;
-            height: auto;
-            position: relative; 
-        }
-    }
-}
 
 
 
