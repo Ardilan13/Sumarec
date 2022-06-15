@@ -34,8 +34,10 @@ a {
 }
 h1,
 h2,
-h3 {
+h3,
+h4 {
   margin: 0 0 5rem 0;
+  cursor: default;
 }
 h1 {
   font-size: 4rem;

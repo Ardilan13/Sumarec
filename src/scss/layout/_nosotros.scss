@@ -10,12 +10,23 @@
   .text {
     color: v.$azulO;
 
-    & p {
+    h2 {
+      padding-bottom: 1%;
+      transition: all 1s;
+    }
+
+    p {
       padding: 0 10%;
     }
   }
 
   picture {
     width: 100%;
+  }
+
+  &:hover {
+    .text h2 {
+      border-bottom: .7rem solid v.$rosa;
+    }
   }
 }
