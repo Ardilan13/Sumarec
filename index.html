@@ -9,162 +9,124 @@
     <meta name="description"
         content="Sumarec es una empresa con la capacidad de sumistrar y emprender proyectos, así como el mantenimiento, reparación y
     puesta en marcha de sistemas en sectores industriales, tecnologicos, mineros, energeticos y quimicos; ubicado en Barrancabermeja.">
+    <title>Sumarec</title>
+    <link rel="icon" href="build/img/logo.png">
+    <link rel="preload" href="build/css/app.css" as="style" />
     <link rel="stylesheet" href="build/css/app.css">
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="build/js/app.js"></script>
-  </head>
+</head>
 
-  <body>
+<body>
     <header class="border">
-      <a class="logo" href="index.html">
-        <picture>
-          <source srcset="build/img/logoBlanco.avif" type="image/avif" />
-          <source srcset="build/img/logoBlanco.webp" type="image/webp" />
-          <img
-            loading="Lazy"
-            src="build/img/logoBlanco.png"
-            alt="logo Sumarec blanco"
-          />
-        </picture>
-      </a>
-      <nav>
-        <a href="">SERVICIOS</a>
-        <a href="">GALERIA</a>
-        <a href="">CONTACTO</a>
-      </nav>
+        <a class="logo" href="index.html">
+            <picture>
+                <source srcset="build/img/logoBlanco.avif" type="image/avif" />
+                <source srcset="build/img/logoBlanco.webp" type="image/webp" />
+                <img loading="Lazy" src="build/img/logoBlanco.png" alt="logo Sumarec blanco" />
+            </picture>
+        </a>
+        <nav>
+            <a href="">SERVICIOS</a>
+            <a href="">GALERIA</a>
+            <a href="">CONTACTO</a>
+        </nav>
     </header>
     <main>
-      <section class="banner">
-        <div class="slide">
-          <div class="slide-inner">
-            <input
-              class="slide-open"
-              type="radio"
-              id="slide-1"
-              name="slide"
-              aria-hidden="true"
-              hidden=""
-              checked="checked"
-            />
-            <div class="slide-item">
-              <picture>
-                <source srcset="build/img/constructor.avif" type="image/avif" />
-                <source srcset="build/img/constructor.webp" type="image/webp" />
-                <img
-                  loading="Lazy"
-                  src="build/img/constructor.png"
-                  alt="constructor"
-                />
-              </picture>
+        <section class="banner">
+            <div class="slide">
+                <div class="slide-inner">
+                    <input class="slide-open" type="radio" id="slide-1" name="slide" aria-hidden="true" hidden=""
+                        checked="checked" />
+                    <div class="slide-item">
+                        <picture>
+                            <source srcset="build/img/constructor.avif" type="image/avif" />
+                            <source srcset="build/img/constructor.webp" type="image/webp" />
+                            <img loading="Lazy" src="build/img/constructor.png" alt="constructor" />
+                        </picture>
+                    </div>
+                    <input class="slide-open" type="radio" id="slide-2" name="slide" aria-hidden="true" hidden="" />
+                    <div class="slide-item">
+                        <picture>
+                            <source srcset="build/img/constructor.avif" type="image/avif" />
+                            <source srcset="build/img/constructor.webp" type="image/webp" />
+                            <img loading="Lazy" src="build/img/constructor.png" alt="constructor" />
+                        </picture>
+                    </div>
+                    <input class="slide-open" type="radio" id="slide-3" name="slide" aria-hidden="true" hidden="" />
+                    <div class="slide-item">
+                        <picture>
+                            <source srcset="build/img/constructor.avif" type="image/avif" />
+                            <source srcset="build/img/constructor.webp" type="image/webp" />
+                            <img loading="Lazy" src="build/img/constructor.png" alt="constructor" />
+                        </picture>
+                    </div>
+                    <div class="slide-control prev control-1 slide-inner">
+                        <label class="label" for="slide-3">‹</label>
+                    </div>
+                    <div class="slide-control next control-1 slide-inner">
+                        <label for="slide-2">›</label>
+                    </div>
+                    <div class="slide-control prev control-2 slide-inner">
+                        <label for="slide-1">‹</label>
+                    </div>
+                    <div class="slide-control next control-2 slide-inner">
+                        <label for="slide-3">›</label>
+                    </div>
+                    <div class="slide-control prev control-3 slide-inner">
+                        <label for="slide-2">‹</label>
+                    </div>
+                    <div class="slide-control next control-3 slide-inner">
+                        <label for="slide-1">›</label>
+                    </div>
+                    <ol class="slide-indicador">
+                        <li>
+                            <label for="slide-1" class="slide-circulo">•</label>
+                        </li>
+                        <li>
+                            <label for="slide-2" class="slide-circulo">•</label>
+                        </li>
+                        <li>
+                            <label for="slide-3" class="slide-circulo">•</label>
+                        </li>
+                    </ol>
+                </div>
             </div>
-            <input
-              class="slide-open"
-              type="radio"
-              id="slide-2"
-              name="slide"
-              aria-hidden="true"
-              hidden=""
-            />
-            <div class="slide-item">
-              <picture>
-                <source srcset="build/img/constructor.avif" type="image/avif" />
-                <source srcset="build/img/constructor.webp" type="image/webp" />
-                <img
-                  loading="Lazy"
-                  src="build/img/constructor.png"
-                  alt="constructor"
-                />
-              </picture>
+        </section>
+
+        <section class="nosotros border">
+            <div class="text">
+                <h2>¿Quienes Somos?</h2>
+                <p>
+                    Somos una compañía que nace en 2022 con el objetivo de brindar
+                    soluciones a nuestros futuros cliente, ofreciendo resultados de
+                    calidad en el desarrollo de procesos propios.
+                </p>
             </div>
-            <input
-              class="slide-open"
-              type="radio"
-              id="slide-3"
-              name="slide"
-              aria-hidden="true"
-              hidden=""
-            />
-            <div class="slide-item">
-               <picture>
-                    <source srcset="build/img/constructor.avif" type="image/avif" />
-                    <source srcset="build/img/constructor.webp" type="image/webp" />
-                    <img
-                     loading="Lazy"
-                     src="build/img/constructor.png"
-                     alt="constructor"
-                    />
+            <picture>
+                <source srcset="build/img/logo.avif" type="image/avif" />
+                <source srcset="build/img/logo.webp" type="image/webp" />
+                <img loading="Lazy" src="build/img/logo.png" alt="logo Sumarec" />
+            </picture>
+        </section>
+
+        <section class="campos border">
+            <div class="campos-content">
+                <div class="text">
+                    <h2>Nuestros Campos de Acción</h2>
+                    <p>
+                        Tenemos la capacidad de sumistrar y emprender proyectos, así como
+                        el mantenimiento, reparación y puesta en marcha de sistemas en
+                        sectores como la:
+                    </p>
+                </div>
+                <picture>
+                    <source srcset="build/img/logoBlanco.avif" type="image/avif" />
+                    <source srcset="build/img/logoBlanco.webp" type="image/webp" />
+                    <img loading="Lazy" src="build/img/logoBlanco.png" alt="logo Sumarec" />
                 </picture>
             </div>
-            <div class="slide-control prev control-1 slide-inner">
-              <label class="label" for="slide-3">‹</label>
-            </div>
-            <div class="slide-control next control-1 slide-inner">
-              <label for="slide-2">›</label>
-            </div>
-            <div class="slide-control prev control-2 slide-inner">
-              <label for="slide-1">‹</label>
-            </div>
-            <div class="slide-control next control-2 slide-inner">
-              <label for="slide-3">›</label>
-            </div>
-            <div class="slide-control prev control-3 slide-inner">
-              <label for="slide-2">‹</label>
-            </div>
-            <div class="slide-control next control-3 slide-inner">
-              <label for="slide-1">›</label>
-            </div>
-            <ol class="slide-indicador">
-              <li>
-                <label for="slide-1" class="slide-circulo">•</label>
-              </li>
-              <li>
-                <label for="slide-2" class="slide-circulo">•</label>
-              </li>
-              <li>
-                <label for="slide-3" class="slide-circulo">•</label>
-              </li>
-            </ol>
-          </div>
-        </div>
-      </section>
-
-      <section class="nosotros border">
-        <div class="text">
-          <h2>¿Quienes Somos?</h2>
-          <p>
-            Somos una compañía que nace en 2022 con el objetivo de brindar
-            soluciones a nuestros futuros cliente, ofreciendo resultados de
-            calidad en el desarrollo de procesos propios.
-          </p>
-        </div>
-        <picture>
-          <source srcset="build/img/logo.avif" type="image/avif" />
-          <source srcset="build/img/logo.webp" type="image/webp" />
-          <img loading="Lazy" src="build/img/logo.png" alt="logo Sumarec" />
-        </picture>
-      </section>
-
-      <section class="campos border">
-        <div class="campos-content">
-          <div class="text">
-            <h2>Nuestros Campos de Acción</h2>
-            <p>
-              Tenemos la capacidad de sumistrar y emprender proyectos, así como
-              el mantenimiento, reparación y puesta en marcha de sistemas en
-              sectores como la:
-            </p>
-          </div>
-          <picture>
-            <source srcset="build/img/logoBlanco.avif" type="image/avif" />
-            <source srcset="build/img/logoBlanco.webp" type="image/webp" />
-            <img
-              loading="Lazy"
-              src="build/img/logoBlanco.png"
-              alt="logo Sumarec"
-            />
-          </picture>
-        </div>
-        <div class="campos-icon">
+            <div class="campos-icon">
                 <div id="1" class="icon-card">
                     <h4>INDUSTRÍA<br> PETROQUÍMICA</h4>
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-droplet" width="60"
@@ -206,7 +168,8 @@
                         <line x1="9.7" y1="17" x2="14.3" y2="17" />
                     </svg>
                 </div>
-      </section>
+        </section>
     </main>
-  </body>
+</body>
+
 </html>
