@@ -7,12 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="DC WebDev">
     <meta name="description"
-        content="Suamrec es una empresa con la capacidad de sumistrar y emprender proyectos, así como el mantenimiento, reparación y
+        content="Sumarec es una empresa con la capacidad de sumistrar y emprender proyectos, así como el mantenimiento, reparación y
     puesta en marcha de sistemas en sectores industriales, tecnologicos, mineros, energeticos y quimicos; ubicado en Barrancabermeja.">
     <title>Sumarec</title>
     <link rel="icon" href="build/img/logo.png">
     <link rel="preload" href="build/css/app.css" as="style" />
     <link rel="stylesheet" href="build/css/app.css">
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="build/js/app.js"></script>
 </head>
 
@@ -26,7 +27,7 @@
             </picture>
         </a>
         <nav>
-            <a href="">SERVICIOS</a>
+            <a href="servicios.html" id="servicios">SERVICIOS</a>
             <a href="">GALERIA</a>
             <a href="">CONTACTO</a>
         </nav>
@@ -61,11 +62,11 @@
                         </picture>
                     </div>
                     <label for="slide-3" class="slide-control prev control-1">‹</label>
-                    <label for="slide-2" class="slide-control next control-1">›</label>
+                    <label for="slide-2" class="slide-control next control-1 press1">›</label>
                     <label for="slide-1" class="slide-control prev control-2">‹</label>
-                    <label for="slide-3" class="slide-control next control-2">›</label>
+                    <label for="slide-3" class="slide-control next control-2 press2">›</label>
                     <label for="slide-2" class="slide-control prev control-3">‹</label>
-                    <label for="slide-1" class="slide-control next control-3">›</label>
+                    <label for="slide-1" class="slide-control next control-3 press3">›</label>
                     <ol class="slide-indicador">
                         <li>
                             <label for="slide-1" class="slide-circulo">•</label>
@@ -108,7 +109,7 @@
                 </picture>
             </div>
             <div class="campos-icon">
-                <div class="icon-card">
+                <div id="1" class="icon-card">
                     <h4>INDUSTRÍA<br> PETROQUÍMICA</h4>
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-droplet" width="60"
                         height="60" viewBox="0 0 24 24" stroke-width="2" stroke="#d21314" fill="none"
@@ -117,7 +118,7 @@
                         <path d="M6.8 11a6 6 0 1 0 10.396 0l-5.197 -8l-5.2 8z" />
                     </svg>
                 </div>
-                <div class="icon-card">
+                <div id="2" class="icon-card">
                     <h4>INDUSTRÍA<br> MINERA</h4>
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-diamond" width="60"
                         height="60" viewBox="0 0 24 24" stroke-width="2" stroke="#d21314" fill="none"
@@ -127,7 +128,7 @@
                         <path d="M10 12l-2 -2.2l.6 -1" />
                     </svg>
                 </div>
-                <div class="icon-card">
+                <div id="3" class="icon-card">
                     <h4>INDUSTRÍA<br> TECNOLÓGICA</h4>
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-device-mobile"
                         width="60" height="60" viewBox="0 0 24 24" stroke-width="2" stroke="#d21314" fill="none"
@@ -138,7 +139,7 @@
                         <line x1="12" y1="17" x2="12" y2="17.01" />
                     </svg>
                 </div>
-                <div class="icon-card">
+                <div id="4" class="icon-card">
                     <h4>INDUSTRÍA<br> ENERGÉTICA</h4>
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bulb" width="60"
                         height="60" viewBox="0 0 24 24" stroke-width="2" stroke="#d21314" fill="none"
