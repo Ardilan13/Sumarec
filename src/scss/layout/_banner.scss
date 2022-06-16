@@ -1,122 +1,125 @@
-@use '../base/mixins' as m;
-@use '../base/variables' as v;
+@use "../base/mixins" as m;
+@use "../base/variables" as v;
 
 .slide {
+  position: relative;
+  box-shadow: 0 7px 13px rgb(0 0 0 / 50%);
+  .slide-inner {
+    display: grid;
+    grid-template-columns: 6% 88% 6%;
     position: relative;
-    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.64);
-    .slide-inner {
-        display: grid;
-        grid-template-columns: 6% 88% 6%;
-        position: relative;
-        overflow: hidden;
-        width: 100%;
-        height: 600px;
-        .slide-open:checked + .slide-item {
-            position: static;
-            opacity: 100;
-        }
-        .slide-item {
-            grid-column: 2/3;
-            position: absolute;
-            opacity: 0;
-            -webkit-transition: opacity 1.5s ease-in;
-            transition: opacity 1.5s ease-in;
-            img{
-                display: block;
-                height: auto;
-                position:absolute;
-                width: 50%;
-                left: 25%;
-            }
-        }
-        .slide-control {
-            background-color: #505050;
-            color: v.$azulO;
-            cursor: pointer;
-            display: none;
-            font-size: 40px;
-            height: 40px;
-            line-height: 35px;
-            position: absolute;
-            top: 50%;
-            cursor: pointer;
-            -ms-transform: translate(0, -50%);
-            transform: translate(0, -50%);
-            text-align: center;
-            width: 40px;
-            z-index: 0;
-            transition: all 1.5s;
-            &:hover{
-                background: radial-gradient(circle, rgba(158,158,158,0.5) 0%, rgba(22,22,22,0.5) 100%);
-            }
-
-            label{
-                position: relative;
-                top: 50%;
-            }
-        }
-        .slide-control.prev {
-            left: 2%;
-            grid-column: 1/2;
-            width: 100%;
-            height: 100%;
-            // &:hover{
-            //     background: radial-gradient(circle, rgba(158,158,158,0.5) 0%, rgba(22,22,22,0.5) 100%);
-            // }
-
-        }
-        
-        .slide-control.next {
-            right: 2%;
-            grid-column: 3/4;
-            width: 100%;
-            height: 100%;
-            // &:hover{
-            //     background: radial-gradient(circle, rgba(158,158,158,0.5) 0%, rgba(22,22,22,0.5) 100%);
-            // }
-        }
-        #slide-1:checked ~ .control-1,
-        #slide-2:checked ~ .control-2,
-        #slide-3:checked ~ .control-3 {
-            display: block;
-        }
-        .slide-indicador {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            position: absolute;
-            bottom: 2%;
-            width: 20%;
-            left: 40%;
-            text-align: center;
-            z-index: 0;
-            li{
-                display: inline-block;
-                margin: 0 5px;
-
-            }
-            
-            .slide-circulo {
-                color: #828282;
-                cursor: pointer;
-                display: block;
-                font-size: 35px;
-                position: relative;
-                top: 10px;
-                &:hover{
-                    color: #aaaaaa;
-                }
-            }
-        } 
-           
+    overflow: hidden;
+    width: 100%;
+    height: 700px;
+    .slide-open:checked + .slide-item {
+      position: static;
+      opacity: 100;
     }
+    .slide-item {
+      grid-column: 2/3;
+      position: absolute;
+      opacity: 0;
+      -webkit-transition: opacity 1.5s ease-in;
+      transition: opacity 1.5s ease-in;
+      img {
+        display: block;
+        height: auto;
+        position: absolute;
+        width: 50%;
+        left: 25%;
+      }
+    }
+    .slide-control {
+      background-color: #505050;
+      color: v.$azulO;
+      cursor: pointer;
+      display: none;
+      font-size: 40px;
+      height: 40px;
+      line-height: 35px;
+      position: absolute;
+      top: 50%;
+      cursor: pointer;
+      -ms-transform: translate(0, -50%);
+      transform: translate(0, -50%);
+      text-align: center;
+      width: 40px;
+      z-index: 0;
+      transition: all 1.5s;
+      &:hover {
+        background: radial-gradient(
+          circle,
+          rgba(158, 158, 158, 0.5) 0%,
+          rgba(22, 22, 22, 0.5) 100%
+        );
+      }
+
+      label {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+      }
+    }
+    .slide-control.prev {
+      grid-column: 1/2;
+      width: 100%;
+      height: 100%;
+      // &:hover{
+      //     background: radial-gradient(circle, rgba(158,158,158,0.5) 0%, rgba(22,22,22,0.5) 100%);
+      // }
+    }
+
+    .slide-control.next {
+      grid-column: 3/4;
+      width: 100%;
+      height: 100%;
+      // &:hover{
+      //     background: radial-gradient(circle, rgba(158,158,158,0.5) 0%, rgba(22,22,22,0.5) 100%);
+      // }
+    }
+    #slide-1:checked ~ .control-1,
+    #slide-2:checked ~ .control-2,
+    #slide-3:checked ~ .control-3 {
+      display: block;
+    }
+    .slide-indicador {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      bottom: 2%;
+      width: 20%;
+      left: 40%;
+      text-align: center;
+      z-index: 0;
+      li {
+        display: inline-block;
+        margin: 0 5px;
+      }
+
+      .slide-circulo {
+        color: #828282;
+        cursor: pointer;
+        display: block;
+        font-size: 5rem;
+        position: relative;
+        top: 1.5rem;
+        &:hover {
+          color: #aaaaaa;
+        }
+      }
+    }
+  }
 }
 
-#slide-1:checked ~ .control-1 ~ .slide-indicador 
-li:nth-child(1) .slide-circulo,
-#slide-2:checked ~ .control-2 ~ .slide-indicador 
-li:nth-child(2) .slide-circulo,
-#slide-3:checked ~ .control-3 ~ .slide-indicador 
-li:nth-child(3) .slide-circulo {
-color: v.$rojo;
-}   
+#slide-1:checked ~ .control-1 ~ .slide-indicador li:nth-child(1) .slide-circulo,
+#slide-2:checked ~ .control-2 ~ .slide-indicador li:nth-child(2) .slide-circulo,
+#slide-3:checked
+  ~ .control-3
+  ~ .slide-indicador
+  li:nth-child(3)
+  .slide-circulo {
+  color: v.$rojo;
+}
