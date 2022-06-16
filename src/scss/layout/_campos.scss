@@ -24,12 +24,12 @@
       min-height: 100%;
       box-shadow: 3px 5px 5px 5px rgba(0, 0, 0, 0.5);
       transition: all 0.7s;
+    }
 
-      &:hover {
-        padding: 2%;
-        box-shadow: 10px 15px 5px 5px rgba(0, 0, 0, 0.5);
-        border: 0.5rem outset v.$rosa;
-      }
+    .hover-icon {
+      padding: 2%;
+      box-shadow: 10px 15px 5px 5px rgba(0, 0, 0, 0.5);
+      border: 0.5rem outset v.$rosa;
     }
 
     h4 {
@@ -39,9 +39,9 @@
   }
 
   .campos-icon {
-    padding-top: 5%;
     margin: 0 auto;
     width: 80%;
+    min-height: 25rem;
   }
 
   p {

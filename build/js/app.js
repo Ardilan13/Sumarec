@@ -1,2 +1,2 @@
-
+function turn_carrusel(){x=0,$(".campos").on("mouseenter",(function(){for(var e=1;e<5;e++)setTimeout("carrusel_timer("+e+")",x),x+=1500}))}function carrusel_cards(){$(".icon-card").on("mouseenter",(function(){addHover($(this).attr("id"))})),$(".icon-card").on("mouseleave",(function(){$(this).attr("id");removeHover()}))}function addHover(e){$("#"+e).addClass("hover-icon")}function removeHover(){$(".icon-card").removeClass("hover-icon")}function carrusel_timer(e){1==e||2==e||3==e?(removeHover(),addHover(e)):4==e&&(removeHover(),addHover(e),setTimeout("removeHover()",1490))}jQuery((function(){carrusel_cards(),turn_carrusel()}));
 //# sourceMappingURL=app.js.map
