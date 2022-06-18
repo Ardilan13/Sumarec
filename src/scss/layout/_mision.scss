@@ -1,0 +1,26 @@
+@use "base/mixins" as m;
+@use "base/variables" as v;
+
+.vision {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  .vision-text {
+    text-align: center;
+    padding: 3rem 5rem;
+    color: v.$azulO;
+
+    svg {
+      position: relative;
+      bottom: 5rem;
+      right: 25rem;
+    }
+  }
+  .bg-azul {
+    background-color: v.$azulO;
+    color: v.$blanco;
+
+    p {
+      color: v.$blanco;
+    }
+  }
+}
