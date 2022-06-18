@@ -12,28 +12,34 @@
             display: flex;
             justify-content: center;
             gap: 2rem;
-            border-bottom: 0.2rem solid rgb(43, 43, 43);
+            border-bottom: 0.2rem solid rgb(59, 59, 59);
             padding: 1rem;
             width: 80%;
+            a{
+                transition: all 0.2s;
+                &:hover{
+                    color:rgb(59, 59, 59);
+                }
+            }
         }
         a{
-            color: #fff;
+            color: v.$blanco;
             font-size: 2rem;
+ 
         }
         .logo{
             margin-top: 2rem;
             width: 8%;
         }
         .border{
-            border-bottom: #fff;
+            border-bottom: v.$blanco;
         }
     }
 
     .footer-info{
+        @include m.grid(3,0);
         width: 80%;
         padding: 0.5rem;
-        display: grid;
-        grid-template-columns: 33.3% 33.3% 33.3%;
         align-items: center;
         margin-top: 1rem;
         margin: 0 auto;
@@ -61,7 +67,14 @@
                 background-color: rgb(58, 57, 57);
                 border-radius: 50% ;
                 padding: 0.5rem;
+                transition: all 0.7s;
+                &:hover{
+                    background-color: rgb(126, 126, 126);
+                    background-color: black;  
+                    transform: scale(1.2);      
+                }
             }
+        
         }
 
 
