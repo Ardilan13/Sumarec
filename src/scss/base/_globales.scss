@@ -16,6 +16,7 @@ body {
 }
 p {
   font-size: 2rem;
+  font-weight: 500;
   stop-color: v.$negro;
   margin: 0;
   text-align: justify;
@@ -38,15 +39,16 @@ h3,
 h4 {
   margin: 0 0 5rem 0;
   cursor: default;
+  font-weight: 700;
 }
 h1 {
-  font-size: 4rem;
+  font-size: 5rem;
 }
 h2 {
-  font-size: 3.5rem;
+  font-size: 4.5rem;
 }
 h3 {
-  font-size: 3rem;
+  font-size: 4rem;
 }
 img {
   max-width: 100%;
