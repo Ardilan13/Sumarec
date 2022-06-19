@@ -1,2 +1,3 @@
 @use 'base'; //@import trae todo el archivo y @use es nueva y compila y usa el _index.scss de cada carpeta
-@use 'layout';
+@use 'index';
+@use 'servicios';

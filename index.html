@@ -13,6 +13,9 @@
     <link rel="icon" href="build/img/logo.png">
     <link rel="preload" href="build/css/app.css" as="style" />
     <link rel="stylesheet" href="build/css/app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="build/js/app.js"></script>
 </head>
@@ -27,9 +30,9 @@
             </picture>
         </a>
         <nav>
-            <a href="">SERVICIOS</a>
-            <a href="">GALERIA</a>
-            <a href="">CONTACTO</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="">Galeria</a>
+            <a href="">Contacto</a>
         </nav>
     </header>
     <main>
@@ -52,6 +55,12 @@
                             <source srcset="build/img/logoBlanco.webp" type="image/webp" />
                             <img loading="Lazy" src="build/img/logoBlanco.png" alt="logo Sumarec blanco" />
                         </picture>
+                        <div class="banner-info">
+                            <h2>¿Conoces nuestros servicios?</h2>
+                            <p>Creemos tener la mejor solución para lo que estás
+                                buscando. Conoce nuestro portafolio aquí:</p>
+                            <input type="button" value="Servicios">
+                        </div>
                     </div>
                     <input class="slide-open" type="radio" id="slide-2" name="slide" aria-hidden="true" hidden="" />
                     <div class="slide-item">
@@ -283,8 +292,7 @@
                 </picture>
             </a>
             <nav>
-                <a href="">Inicio</a>
-                <a href="">Servicios</a>
+                <a href="servicios.html">Servicios</a>
                 <a href="">Galeria</a>
                 <a href="">Contacto</a>
             </nav>

@@ -22,6 +22,15 @@ jQuery(function () {
       let id = $(this).attr("id");
       removeHover();
     });
+
+    $(".servicios-card").on("mouseenter", function () {
+      let id = $(this).attr("id");
+      addHover(id);
+    });
+    $(".servicios-card").on("mouseleave", function () {
+      let id = $(this).attr("id");
+      removeHover();
+    });
   }
   
   function addHover(id) {
@@ -30,6 +39,7 @@ jQuery(function () {
   
   function removeHover() {
     $(".icon-card").removeClass("hover-icon");
+    $(".servicios-card").removeClass("hover-icon");
   }
   
   function carrusel_timer(id) {
