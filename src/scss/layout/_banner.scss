@@ -20,12 +20,22 @@
       transition: opacity 1.5s ease-in;
       height: 100%;
       width: 100%;
+      img{
+        width: 8%;
+        position: relative;
+        bottom: 14%;
+        left: 90%;
+
+      }
       .banner1-image{
         background-image: url(/build/img/banner1.png);
         background-repeat: no-repeat;
         background-size: cover;
         height: 100%;
         width: 100%;
+        img{
+          width: 20%;
+        }
         .banner-info {
           display: flex;
           flex-direction: column;
@@ -54,7 +64,6 @@
             padding: 1rem;
             width: 20%;
             border-radius: 10px;
-            font-size: 1.8rem;
             cursor: pointer;
             &:hover{
               border: 0.5px solid v.$rosa;
@@ -77,7 +86,7 @@
           align-items: center;
           position: relative;
           left: 5%;
-          top: 10%;
+          top: 14%;
           h2 {
             width: auto;
             text-align: center;
@@ -97,7 +106,6 @@
             padding: 1rem;
             width: 20%;
             border-radius: 10px;
-            font-size: 1.8rem;
             cursor: pointer;
             &:hover{
               border: 0.5px solid v.$rosa;
@@ -105,10 +113,17 @@
           }
           .banner-redes{
             display: flex;
-            gap: 10%;
+            gap: 17%;
             align-items: center;
+            .red1{
+              img{
+                width: 6rem;
+                height: 4.6rem;
+              }
+            }
             img{
-              width: 100%;
+              width: 7rem;
+              height: 5rem;
             }
           }
         }
@@ -137,6 +152,7 @@
       }
 
       label {
+        display: block;
         height: 100%;
         align-items: center;
         cursor: pointer;
