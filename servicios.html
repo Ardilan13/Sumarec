@@ -21,6 +21,21 @@
 </head>
 
 <body>
+    <div class="modal">
+        <div class="modal-content servicios-card">
+            <div class="servicios-svg">
+                <h2></h2>
+                <svg width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#d21314" fill="none"></svg>
+            </div>
+            <p></p>
+            <picture>
+                <source srcset="build/img/.avif" type="image/avif" />
+                <source srcset="build/img/.webp" type="image/webp" />
+                <img loading="Lazy" src="build/img/.png" alt="logo Sumarec blanco" />
+            </picture>
+        </div>
+        <button class="modal-close">X</button>
+    </div>
     <header class="border">
         <a class="logo" href="index.html">
             <picture>
@@ -30,8 +45,8 @@
             </picture>
         </a>
         <nav>
+            <a href="index.html">Inicio</a>
             <a class="active" href="servicios.html">Servicios</a>
-            <a href="">Galeria</a>
             <a href="">Contacto</a>
         </nav>
     </header>
@@ -40,6 +55,12 @@
         <div class="servicios">
             <div id="1" class="servicios-card">
                 <h4>Mantenimiento Electrónico.</h4>
+                <p>Suministro, mantenimiento y reparación de variadores de velocidad y de frecuencia, arrancadores
+                    suaves, tarjetas de control para equipos de bombeo mecánico, tarjetas analógicas para medición de
+                    pozos, tarjetas de expansión y de comunicación, fuentes conmutadas, controlador lógico programable
+                    (PLC), pantallas táctiles (panelview), sistema de alimentación ininterrumpida (UPS), Switch, Router,
+                    transmisor de presión, de nivel, de temperatura, de flujo), switch de nivel. Mantenimiento a equipos
+                    de medición de instrumentación (temperatura, voltaje, presión, flujo, corriente de lazo, etc.) </p>
                 <div class="servicios-svg">
                     <svg width="40" height="40" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -49,7 +70,7 @@
                             d="M31.25 4.6875C32.1129 4.6875 32.8125 5.38706 32.8125 6.25V12.3469C35.2362 12.8275 37.1656 14.7422 37.6211 17.1875H43.75C44.6129 17.1875 45.3125 17.8871 45.3125 18.75C45.3125 19.6129 44.6129 20.3125 43.75 20.3125H37.9415C38.0182 21.3531 38.0693 22.395 38.0949 23.4375H41.6667C42.5296 23.4375 43.2292 24.1371 43.2292 25C43.2292 25.8629 42.5296 26.5625 41.6667 26.5625H38.0949C38.0693 27.605 38.0182 28.6469 37.9415 29.6875H43.75C44.6129 29.6875 45.3125 30.3871 45.3125 31.25C45.3125 32.1129 44.6129 32.8125 43.75 32.8125H37.6211C37.1656 35.2578 35.2362 37.1725 32.8125 37.6531V43.75C32.8125 44.6129 32.1129 45.3125 31.25 45.3125C30.3871 45.3125 29.6875 44.6129 29.6875 43.75V37.9703C28.6495 38.0438 27.6068 38.0928 26.5625 38.1172V41.6667C26.5625 42.5296 25.8629 43.2292 25 43.2292C24.1371 43.2292 23.4375 42.5296 23.4375 41.6667V38.1172C22.3932 38.0928 21.3505 38.0438 20.3125 37.9703V43.75C20.3125 44.6129 19.6129 45.3125 18.75 45.3125C17.8871 45.3125 17.1875 44.6129 17.1875 43.75V37.6531C14.7638 37.1725 12.8345 35.2578 12.3789 32.8125H6.25C5.38705 32.8125 4.6875 32.1129 4.6875 31.25C4.6875 30.3871 5.38705 29.6875 6.25 29.6875H12.0585C11.9818 28.6469 11.9307 27.605 11.9051 26.5625H8.33333C7.47039 26.5625 6.77083 25.8629 6.77083 25C6.77083 24.1371 7.47039 23.4375 8.33333 23.4375H11.9051C11.9307 22.395 11.9818 21.3531 12.0585 20.3125H6.25C5.38706 20.3125 4.6875 19.6129 4.6875 18.75C4.6875 17.8871 5.38706 17.1875 6.25 17.1875H12.3789C12.8345 14.7422 14.7638 12.8275 17.1875 12.3469V6.25C17.1875 5.38706 17.8871 4.6875 18.75 4.6875C19.6129 4.6875 20.3125 5.38706 20.3125 6.25V12.0297C21.3505 11.9562 22.3932 11.9072 23.4375 11.8828V8.33333C23.4375 7.47039 24.1371 6.77083 25 6.77083C25.8629 6.77083 26.5625 7.47039 26.5625 8.33333V11.8828C27.6068 11.9072 28.6495 11.9562 29.6875 12.0297V6.25C29.6875 5.38706 30.3871 4.6875 31.25 4.6875ZM28.7672 17.5988C26.283 17.3212 23.717 17.3212 21.2327 17.5988C19.3619 17.8079 17.8458 19.2804 17.6243 21.1744C17.327 23.7162 17.327 26.2839 17.6243 28.8256C17.8458 30.7196 19.3619 32.1921 21.2327 32.4012C23.717 32.6788 26.283 32.6788 28.7672 32.4012C30.6381 32.1921 32.1542 30.7196 32.3757 28.8256C32.673 26.2839 32.673 23.7162 32.3757 21.1744C32.1542 19.2804 30.6381 17.8079 28.7672 17.5988Z"
                             fill="#d21314" />
                     </svg>
-                    <button>
+                    <button class="modal-open">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-right"
                             width="40" height="40" viewBox="0 0 24 24" stroke-width="2" stroke="#d21314" fill="none"
                             stroke-linecap="round" stroke-linejoin="round">
@@ -63,6 +84,8 @@
             </div>
             <div id="2" class="servicios-card">
                 <h4>Diseño y Fabricación de Cables.</h4>
+                <p>Suministro, mantenimiento, reparación y construcción con actividades de conexionado de celdas de
+                    cargas para machines y sistemas de bombeo mecánico, fabricación de cables de celdas de carga.</p>
                 <div class="servicios-svg">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shape-2" width="40"
                         height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#d21314" fill="none"
@@ -74,7 +97,7 @@
                         <circle cx="5" cy="19" r="2" />
                         <path d="M6.5 17.5l11 -11m-12.5 .5v10m14 -10v10" />
                     </svg>
-                    <button>
+                    <button class="modal-open">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-right"
                             width="40" height="40" viewBox="0 0 24 24" stroke-width="2" stroke="#d21314" fill="none"
                             stroke-linecap="round" stroke-linejoin="round">
@@ -88,6 +111,9 @@
             </div>
             <div id="3" class="servicios-card">
                 <h4>Automatización.</h4>
+                <p>Desarrollo de aplicaciones tecnológicas aplicadas a la industria y requerimientos según el cliente,
+                    programación de PLC, microcontroladores, desarrollo de lógica de contactores, configuración de
+                    equipos de comunicación, redes de datos e información.</p>
                 <div class="servicios-svg">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-settings-automation"
                         width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#d21314" fill="none"
@@ -97,7 +123,7 @@
                             d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z" />
                         <path d="M10 9v6l5 -3z" />
                     </svg>
-                    <button>
+                    <button class="modal-open">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-right"
                             width="40" height="40" viewBox="0 0 24 24" stroke-width="2" stroke="#d21314" fill="none"
                             stroke-linecap="round" stroke-linejoin="round">
@@ -111,6 +137,8 @@
             </div>
             <div id="4" class="servicios-card">
                 <h4>Sistemas de Seguridad.</h4>
+                <p>Instalación de sistemas de circuito cerrado para local, empresa y zona residencial. Comunicación web
+                    con el punto de monitoreo.</p>
                 <div class="servicios-svg">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shield-lock" width="40"
                         height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#d21314" fill="none"
@@ -120,7 +148,7 @@
                         <circle cx="12" cy="11" r="1" />
                         <line x1="12" y1="12" x2="12" y2="14.5" />
                     </svg>
-                    <button>
+                    <button class="modal-open">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-right"
                             width="40" height="40" viewBox="0 0 24 24" stroke-width="2" stroke="#d21314" fill="none"
                             stroke-linecap="round" stroke-linejoin="round">
@@ -134,6 +162,9 @@
             </div>
             <div id="5" class="servicios-card">
                 <h4>Diseño electrónico y Elaboración de Componentes con Impresión 3D.</h4>
+                <p>Elaboración de tarjetas PCB para procesos electrónicos puntuales, remano facturación de equipos
+                    electrónicos. elaboración y desarrollo de componentes en impresión 3D en materiales de alta calidad
+                    (ABS, Fibra de carbono, PLA). </p>
                 <div class="servicios-svg">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-3d-cube-sphere"
                         width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#d21314" fill="none"
@@ -152,7 +183,7 @@
                         <path d="M12 12l-2 -1.12" />
                         <line x1="6" y1="8.6" x2="4" y2="7.5" />
                     </svg>
-                    <button>
+                    <button class="modal-open">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-right"
                             width="40" height="40" viewBox="0 0 24 24" stroke-width="2" stroke="#d21314" fill="none"
                             stroke-linecap="round" stroke-linejoin="round">
@@ -166,6 +197,10 @@
             </div>
             <div id="6" class="servicios-card">
                 <h4>Obras Eléctricas.</h4>
+                <p>Suministro, mantenimiento, reparación y construcción con actividades de desmantelamiento de sistemas
+                    eléctricos, instalación de tubería Conduit, instalación de bandejas porta cable, cableado
+                    estructurado, conexionado, instalación y pruebas a tableros para baja, media, alta tensión y puesta
+                    en marcha de sistemas eléctricos.</p>
                 <div class="servicios-svg">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bolt" width="40"
                         height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#d21314" fill="none"
@@ -173,7 +208,7 @@
                         <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                         <polyline points="13 3 13 10 19 10 11 21 11 14 5 14 13 3" />
                     </svg>
-                    <button>
+                    <button class="modal-open">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-right"
                             width="40" height="40" viewBox="0 0 24 24" stroke-width="2" stroke="#d21314" fill="none"
                             stroke-linecap="round" stroke-linejoin="round">
@@ -187,6 +222,10 @@
             </div>
             <div id="7" class="servicios-card">
                 <h4>Montaje de Tubería.</h4>
+                <p>Suministro, mantenimiento, reparación y construcción con actividades a sistemas de tubería para
+                    refinerías, estaciones de bombeo, compresión; oleoductos y gasoductos, sistemas de tubería
+                    sanitaria, sistemas en tuberías plástica y puesta en marcha de los sistemas anteriormente
+                    mencionados. </p>
                 <div class="servicios-svg">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-droplet" width="40"
                         height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#d21314" fill="none"
@@ -194,7 +233,7 @@
                         <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                         <path d="M6.8 11a6 6 0 1 0 10.396 0l-5.197 -8l-5.2 8z" />
                     </svg>
-                    <button>
+                    <button class="modal-open">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-right"
                             width="40" height="40" viewBox="0 0 24 24" stroke-width="2" stroke="#d21314" fill="none"
                             stroke-linecap="round" stroke-linejoin="round">
@@ -208,6 +247,11 @@
             </div>
             <div id="8" class="servicios-card">
                 <h4>Diseño e Ingeniería.</h4>
+                <p>Desarrollo de ingenierías básica y de detalle en cualquier proceso de la industria, realizando
+                    levantamientos en campo, elaboración de memorias de cálculo, elaboración de especificaciones
+                    técnicas, elaboración de planos requeridos para todo proceso constructivo de las especialidades de
+                    proceso, mecánica, instrumentación, eléctrica y civil en diseños 2D y 3D, caracterización y
+                    catalogación, dosieres, planos Red Line y As Built.</p>
                 <div class="servicios-svg">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-wallpaper" width="40"
                         height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#d21314" fill="none"
@@ -217,7 +261,7 @@
                         <circle cx="6" cy="18" r="2" />
                         <path d="M8 18v-12a2 2 0 1 0 -4 0v12" />
                     </svg>
-                    <button>
+                    <button class="modal-open">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-right"
                             width="40" height="40" viewBox="0 0 24 24" stroke-width="2" stroke="#d21314" fill="none"
                             stroke-linecap="round" stroke-linejoin="round">
@@ -231,6 +275,9 @@
             </div>
             <div id="9" class="servicios-card">
                 <h4>Obras Civiles.</h4>
+                <p>Suministro, mantenimiento, reparación y construcción con actividades de demolición, excavación,
+                    rellenos, estructuras en concreto, estructuras metálicas, pavimentación de vías flexibles, rígido y
+                    articulado, construcción de edificaciones, sistemas de alcantarillado y plomería. </p>
                 <div class="servicios-svg">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-building-skyscraper"
                         width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#d21314" fill="none"
@@ -244,7 +291,7 @@
                         <line x1="9" y1="15" x2="9" y2="15.01" />
                         <line x1="9" y1="18" x2="9" y2="18.01" />
                     </svg>
-                    <button>
+                    <button class="modal-open">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-right"
                             width="40" height="40" viewBox="0 0 24 24" stroke-width="2" stroke="#d21314" fill="none"
                             stroke-linecap="round" stroke-linejoin="round">
@@ -258,6 +305,8 @@
             </div>
             <div id="10" class="servicios-card">
                 <h4>Pruebas Hidrostáticas.</h4>
+                <p>Realizamos pruebas hidrostáticas y neumáticas a sistemas de tubería de proceso, oleoductos,
+                    gasoductos, recipientes a presión, tanques y válvulas.</p>
                 <div class="servicios-svg">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-manual-gearbox"
                         width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#d21314" fill="none"
@@ -272,7 +321,7 @@
                         <line x1="12" y1="8" x2="12" y2="16" />
                         <path d="M19 8v2a2 2 0 0 1 -2 2h-12" />
                     </svg>
-                    <button>
+                    <button class="modal-open">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-right"
                             width="40" height="40" viewBox="0 0 24 24" stroke-width="2" stroke="#d21314" fill="none"
                             stroke-linecap="round" stroke-linejoin="round">
@@ -286,6 +335,8 @@
             </div>
             <div id="11" class="servicios-card">
                 <h4>Limpieza y Pintura.</h4>
+                <p>Suministro, mantenimiento, reparación y sistemas nuevos de tubería, recipientes a presión, tanques de
+                    almacenamiento, estructuras metálicas.</p>
                 <div class="servicios-svg">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-paint" width="40"
                         height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#d21314" fill="none"
@@ -295,7 +346,7 @@
                         <path d="M19 6h1a2 2 0 0 1 2 2a5 5 0 0 1 -5 5l-5 0v2" />
                         <rect x="10" y="15" width="4" height="6" rx="1" />
                     </svg>
-                    <button>
+                    <button class="modal-open">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-right"
                             width="40" height="40" viewBox="0 0 24 24" stroke-width="2" stroke="#d21314" fill="none"
                             stroke-linecap="round" stroke-linejoin="round">
@@ -309,6 +360,9 @@
             </div>
             <div id="12" class="servicios-card">
                 <h4>Obras de Instrumentación y Control.</h4>
+                <p>Suministro, mantenimiento, reparación y construcción con actividades de calibración, montaje de
+                    instrumentos para sistemas industriales y workover, pruebas de lazo, reparación a tarjetas de
+                    control y potencia, reparación y mantenimiento a instrumentación con componentes electrónicos. </p>
                 <div class="servicios-svg">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-eye-check" width="40"
                         height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#d21314" fill="none"
@@ -319,7 +373,7 @@
                             d="M12 19c-4 0 -7.333 -2.333 -10 -7c2.667 -4.667 6 -7 10 -7s7.333 2.333 10 7c-.42 .736 -.858 1.414 -1.311 2.033" />
                         <path d="M15 19l2 2l4 -4" />
                     </svg>
-                    <button>
+                    <button class="modal-open">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-right"
                             width="40" height="40" viewBox="0 0 24 24" stroke-width="2" stroke="#d21314" fill="none"
                             stroke-linecap="round" stroke-linejoin="round">
@@ -343,8 +397,8 @@
                 </picture>
             </a>
             <nav>
+                <a href="index.html">Inicio</a>
                 <a class="active" href="servicios.html">Servicios</a>
-                <a href="">Galeria</a>
                 <a href="">Contacto</a>
             </nav>
         </div>
