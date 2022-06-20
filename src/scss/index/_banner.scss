@@ -31,41 +31,49 @@
         background-repeat: no-repeat;
         background-size: cover;
         height: 100%;
-        width: 100%;
+        width: 105%;
+        margin-left: -1%;
         img{
           width: 20%;
         }
         .banner-info {
           display: flex;
           flex-direction: column;
-          gap: 3rem;
+          gap: 5rem;
           width: 50%;
           align-items: center;
-          position: relative;
-          left: 45%;
-          top: 25%;
+          position: absolute;
+          margin: 7.4% 0;
           h2 {
             width: auto;
             text-align: center;
             margin: 0;
             color: v.$blanco;
-            font-size: 6.5rem;
+            font-size: 7rem;
           }
           p {
             width: 70%;
             text-align: center;
             color: v.$blanco;
             line-height: 3rem;
-            font-size: 2rem;
+            font-size: 2.5rem;
+            font-weight: 600;
           }
           input {
             color: v.$rosa;
-            padding: 1rem;
-            width: 20%;
+            padding: 1.3rem;
+            width: 25rem;
             border-radius: 10px;
-            cursor: pointer;
+            font-weight: bold;
+            font-size: 2rem;
+            text-align: center;
+            transition: all .7s;
+            border: none;
             &:hover{
-              border: 0.5px solid v.$rosa;
+              cursor: pointer;
+              background-color: v.$rosa;
+              color: v.$blanco;
+      
             }
           }
         }
@@ -84,36 +92,45 @@
           width: 50%;
           align-items: center;
           position: relative;
-          left: 5%;
-          top: 14%;
+          left: 2%;
+          top: 16%;
           h2 {
             width: auto;
             text-align: center;
             margin: 0;
             color: v.$blanco;
-            font-size: 6.5rem;
+            font-size: 7rem;
           }
           p {
             width: 65%;
             text-align: center;
             color: v.$blanco;
             line-height: 3rem;
-            font-size: 2rem;
+            font-size: 2.5rem;
+            font-weight: 600;
           }
           input {
             color: v.$rosa;
-            padding: 1rem;
-            width: 20%;
+            padding: 1.3rem;
+            width: 25rem;
             border-radius: 10px;
             cursor: pointer;
+            font-weight: bold;
+            font-size: 2rem;
+            text-align: center;
+            transition: all .7s;
+            border: none;
             &:hover{
-              border: 0.5px solid v.$rosa;
+              background-color: v.$rosa;
+              color: v.$blanco;
             }
           }
           .banner-redes{
             display: flex;
             gap: 17%;
             align-items: center;
+            position: relative;
+            right: 4%;
             .red1{
               img{
                 width: 6rem;
@@ -127,6 +144,57 @@
           }
         }
       }
+      .banner3-image{
+        background-image: url(/build/img/banner3.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+        .banner3-info {
+          display: flex;
+          flex-direction: column;
+          gap: 5rem;
+          width: 50%;
+          align-items: center;
+          position: absolute;
+          margin: 8.2% 0;
+          left: 48%;
+          h2 {
+            width: auto;
+            text-align: center;
+            margin: 0;
+            color: v.$blanco;
+            font-size: 7rem;
+          }
+          p {
+            width: 70%;
+            text-align: center;
+            color: v.$blanco;
+            line-height: 3rem;
+            font-size: 2.5rem;
+            font-weight: 600;
+          }
+          input {
+            color: v.$rosa;
+            padding: 1.3rem;
+            width: 25rem;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 2rem;
+            text-align: center;
+            font-size: 2rem;
+            text-align: center;
+            transition: all .7s;
+            border: none;
+            &:hover{
+              background-color: v.$rosa;
+              color: v.$blanco;
+            }
+          }
+        }
+      }
+
     }
     .slide-control {
       background-color: v.$blanco;
