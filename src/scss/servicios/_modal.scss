@@ -18,6 +18,13 @@
     opacity: 0;
     transition: all .7s;
 
+    img{
+      height: 22rem;
+      width: 60rem;
+      margin: 0 auto;
+      border-radius: 10px;
+    }
+
     h2 {
       color: v.$rosa;
       margin: 0;
