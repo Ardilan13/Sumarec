@@ -8,12 +8,15 @@
   display: none;
 
   .modal-content {
-    position: relative;
-    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin: 0 auto;
     width: 80%;
     padding: 5% 8%;
-    top: 25%;
-    margin-top: -25px;
+    opacity: 0;
+    transition: all .7s;
 
     h2 {
       color: v.$rosa;
