@@ -95,7 +95,7 @@ function openModal(id) {
   $(".modal-content p").text(text);
   $(".modal-content .modal-avif").attr("srcset", "build/img/servicios/"+id+".avif");
   $(".modal-content .modal-webp").attr("srcset", "build/img/servicios/"+id+".webp");
-  $(".modal-content .modal-avif").attr("src", "build/img/servicios/"+id+".png");
+  $(".modal-content .modal-png").attr({"src": "build/img/servicios/"+id+".png", "alt": title});
 }
 
 function closeModal() {
