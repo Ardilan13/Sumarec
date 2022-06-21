@@ -1,0 +1,80 @@
+@use "../base/variables" as v;
+footer {
+  background-color: black;
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      border-bottom: 0.2rem solid v.$gris;
+      padding: 1rem;
+      width: 80%;
+      a {
+        color: v.$blanco;
+        font-size: 2rem;
+        height: 2.7rem;
+        transition: all 0.4s;
+
+        &:hover {
+          border-bottom: 0.4rem solid v.$blanco;
+        }
+      }
+
+      .active {
+        border-bottom: 0.4rem solid v.$blanco;
+      }
+    }
+    .logo {
+      margin-top: 2rem;
+      width: 6%;
+    }
+    .border {
+      border-bottom: v.$blanco;
+    }
+  }
+
+  .footer-info {
+    width: 80%;
+    padding: 0.5rem;
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    align-items: center;
+    margin: 0 auto;
+    .footer-text {
+      margin: 0 auto;
+      p {
+        color: v.$blanco;
+        text-align: center;
+        font-size: 1.5rem;
+      }
+    }
+
+    h4 {
+      color: v.$blanco;
+      margin: 0 auto;
+      font-size: 1.5rem;
+    }
+
+    .footer-redes {
+      display: flex;
+      gap: 1.5rem;
+      margin: 0 auto;
+      padding: 0.1rem;
+      svg {
+        background-color: v.$gris;
+        border-radius: 50%;
+        padding: 0.6rem;
+        transition: all 0.8s;
+
+        &:hover {
+          background-color: v.$blanco;
+          stroke: v.$negro;
+        }
+      }
+    }
+  }
+}
