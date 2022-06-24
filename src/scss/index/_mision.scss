@@ -3,6 +3,10 @@
 
 .vision {
   @include m.grid(2, 0);
+
+  @include m.tablet{
+    @include m.grid(1, 0);
+  }
   .vision-text {
     text-align: center;
     padding: 3rem 5rem;

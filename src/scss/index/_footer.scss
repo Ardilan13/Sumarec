@@ -1,4 +1,5 @@
 @use "../base/variables" as v;
+@use "base/mixins" as m;
 footer {
   background-color: black;
   .footer-content {
@@ -13,6 +14,11 @@ footer {
       border-bottom: 0.2rem solid v.$gris;
       padding: 1rem;
       width: 80%;
+
+      @include m.tablet{
+        gap: 5rem;
+      }
+
       a {
         color: v.$blanco;
         font-size: 2rem;
@@ -44,6 +50,12 @@ footer {
     grid-template-columns: 33.3% 33.3% 33.3%;
     align-items: center;
     margin: 0 auto;
+
+    @include m.tablet {
+      @include m.grid(1, 3rem);
+      margin-top: 3rem;
+    }
+
     .footer-text {
       margin: 0 auto;
       p {
@@ -63,7 +75,11 @@ footer {
       display: flex;
       gap: 1.5rem;
       margin: 0 auto;
-      padding: 0.1rem;
+
+      @include m.tablet {
+        gap: 5rem;
+      }
+
       svg {
         background-color: v.$gris;
         border-radius: 50%;

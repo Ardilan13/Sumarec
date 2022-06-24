@@ -7,6 +7,18 @@
   .servicios {
     @include m.grid(4, 3rem);
 
+    @include m.desktop {
+      @include m.grid(3, 0);
+    }
+
+    @include m.tablet {
+      @include m.grid(2, 0);
+    }
+
+    @include m.telefono {
+      @include m.grid(1, 0);
+    }
+
     .hover-icon {
       margin: 0.5rem;
       box-shadow: 10px 15px 10px 5px rgba(0, 0, 0, 0.5);

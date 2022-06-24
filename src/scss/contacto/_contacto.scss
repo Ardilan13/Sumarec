@@ -11,6 +11,13 @@
     margin: 0 3%;
     height: 70rem;
 
+    @include m.tablet{
+      @include m.grid(1,5%);
+      p{
+        display: none;
+      }
+    }
+
     h3,
     p,
     ul a {
