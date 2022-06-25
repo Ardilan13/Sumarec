@@ -1,4 +1,5 @@
 @use "../base/variables" as v;
+@use '../base/mixins' as m;
 
 .slide {
   position: relative;
@@ -24,15 +25,39 @@
         position: relative;
         bottom: 14%;
         left: 90%;
+        @include m.desktopXL{
+          bottom: 16%;
+        }
+        @include m.desktop{
+          width: 10%;
+          bottom: 11%;
+        }
+        @include m.tablet{
+          width: 15%;
+          bottom: 11%;
+          left: 83%;
+        }
+        @include m.telefono{
+          width: 12%;
+          bottom: 8%;
+          left: 84%;
+        }
 
       }
       .banner1-image{
         background-image: url(../img/banner1.webp);
         background-repeat: no-repeat;
         background-size: cover;
-        height: 100%;
+        height: 102%;
         width: 105%;
         margin-left: -1%;
+        @include m.desktop{
+          margin-left: -2%;    
+          background:  rgba(0, 0, 0, 0.77) url(../img/banner1Cel.webp);
+          background-size: cover;
+          background-position-x: center;  
+          background-blend-mode: darken;
+        }
         img{
           width: 20%;
         }
@@ -44,12 +69,35 @@
           align-items: center;
           position: absolute;
           margin: 7.4% 0;
+          @include m.desktop{
+            left: 10%;
+            width: 60%;
+          }
+          @include m.tablet{
+            top: 7%;
+            gap: 3rem;
+            width: 90%;
+            left: 6%;
+          }
+
+          @include m.telefono{
+            left: 4%;
+            gap: 2rem;
+            width: auto;
+            margin: 0;
+            top: 10%;
+          }
+          
           h2 {
             width: auto;
             text-align: center;
             margin: 0;
             color: v.$blanco;
             font-size: 7rem;
+            @include m.telefono{
+              width: 95%;
+              font-size: 5rem;
+            }
           }
           p {
             width: 70%;
@@ -58,6 +106,10 @@
             line-height: 3rem;
             font-size: 2.5rem;
             font-weight: 600; 
+            @include m.telefono{
+              width: 60%;
+              font-size: 2rem;
+            }
           }
           input {
             color: v.$rosa;
@@ -85,6 +137,14 @@
         background-size: cover;
         height: 100%;
         width: 100%;
+        @include m.desktop{
+          background:  rgba(0, 0, 0, 0.77) url(../img/banner3Cel.webp);
+          background-size: cover;
+          background-position-x: center; 
+          background-blend-mode: darken;
+
+          
+        }
         .banner2-info {
           display: flex;
           flex-direction: column;
@@ -94,12 +154,40 @@
           position: relative;
           left: 2%;
           top: 16%;
+          @include m.desktop{
+            margin: 0;
+            top: 5%;
+            gap: 2rem;
+          }
+          @include m.tablet{
+            top: 9%;
+            gap: 3rem;
+            width: 100%;
+          }
+
+          @include m.telefono{
+            left: 2%;
+            gap: 2rem;
+            margin: 0;
+            top: 9%;
+            width: auto;
+          }
+
+
           h2 {
             width: auto;
             text-align: center;
             margin: 0;
             color: v.$blanco;
             font-size: 7rem;
+            @include m.tablet{
+              width: 85%;
+            }
+            @include m.telefono{
+              width: 95%;
+              font-size: 4.5rem;
+            }
+            
           }
           p {
             width: 65%;
@@ -108,6 +196,13 @@
             line-height: 3rem;
             font-size: 2.5rem;
             font-weight: 600;
+            @include m.tablet{
+              width: 73%;
+            }
+            @include m.telefono{
+              width: 60%;
+              font-size: 2rem;
+            }
           }
           input {
             color: v.$rosa;
@@ -131,6 +226,16 @@
             align-items: center;
             position: relative;
             right: 4%;
+            @include m.desktop{
+              right: 6%;
+            }
+            @include m.tablet{
+              right: 4%;
+            }
+            @include m.telefono{
+              right: 10%;
+            }
+
             .red1{
               img{
                 width: 6rem;
@@ -150,6 +255,12 @@
         background-size: cover;
         height: 100%;
         width: 100%;
+        @include m.desktop{
+          background:  rgba(0, 0, 0, 0.77) url(../img/banner2Cel.webp);
+          background-size: cover;
+          background-position-x: center;
+          background-blend-mode: darken;
+        }
         .banner3-info {
           display: flex;
           flex-direction: column;
@@ -159,12 +270,27 @@
           position: absolute;
           margin: 8.2% 0;
           left: 48%;
+          @include m.tablet{
+            top: 7%;
+            gap: 3rem;
+            left: 0;
+            width: 100%;
+          }
+          @include m.telefono{
+            gap: 2rem;
+            top: 6%;
+            width: auto;
+          }
           h2 {
             width: auto;
             text-align: center;
             margin: 0;
             color: v.$blanco;
             font-size: 7rem;
+            @include m.telefono{
+              width: 90%;
+              font-size: 5rem;
+            }
           }
           p {
             width: 70%;
@@ -173,6 +299,11 @@
             line-height: 3rem;
             font-size: 2.5rem;
             font-weight: 600;
+            @include m.telefono{
+              width: 60%;
+              font-size: 2rem;
+            }
+
           }
           input {
             color: v.$rosa;
@@ -212,10 +343,18 @@
       text-align: center;
       width: 50px;
       z-index: 0;
+      @include m.telefono{
+        background-color: transparent;
+      }
+
       &:hover {
         background-color: v.$gris;
         opacity: 1;
-        ;
+        @include m.telefono{
+          background-color: transparent;
+          
+        }
+        
       }
 
       label {
@@ -225,6 +364,9 @@
         cursor: pointer;
         position: relative;
         top: 10%;
+        @include m.telefono{
+          color: #fff;
+        }
       }
     }
     .slide-control.prev {
@@ -239,6 +381,10 @@
     #slide-3:checked ~ .control-3 {
       display: block;
       border-radius: 50%;
+      @include m.telefono{
+        width: 10%;
+        height: 7%;
+      }
     }
     .slide-indicador {
       list-style: none;
@@ -250,6 +396,12 @@
       left: 40%;
       text-align: center;
       z-index: 0;
+      @include m.tablet{
+        display: flex;
+      }
+      @include m.telefono{
+        left: 35%;
+      }
       li {
         display: inline-block;
         margin: 0 5px;
