@@ -7,6 +7,7 @@ footer {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+
     nav {
       display: flex;
       justify-content: center;
@@ -15,8 +16,15 @@ footer {
       padding: 1rem;
       width: 80%;
 
-      @include m.tablet{
+      @include m.tablet {
         gap: 5rem;
+      }
+
+      @include m.telefono {
+        gap: 5%;
+        a {
+          font-size: 1.5rem !important;
+        }
       }
 
       a {
@@ -56,6 +64,15 @@ footer {
       margin-top: 3rem;
     }
 
+    @include m.telefono {
+      p {
+        font-size: 1rem !important;
+      }
+      h4 {
+        font-size: 1rem !important;
+      }
+    }
+
     .footer-text {
       margin: 0 auto;
       p {
@@ -78,6 +95,9 @@ footer {
 
       @include m.tablet {
         gap: 5rem;
+      }
+      @include m.telefono {
+        gap: 1rem;
       }
 
       svg {

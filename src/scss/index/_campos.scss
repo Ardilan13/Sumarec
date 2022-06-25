@@ -8,6 +8,10 @@
   flex-direction: column;
   padding: 3% 10%;
 
+  @include m.telefono {
+    padding: 5%;
+  }
+
   .campos-content,
   .campos-icon {
     display: flex;
@@ -58,7 +62,7 @@
 
     @include m.telefono {
       @include m.grid(1, 3rem);
-      padding: 5% 10%;
+      padding: 10% 5%;
     }
   }
 

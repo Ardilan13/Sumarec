@@ -71,20 +71,18 @@ function modal() {
   $(".servicios-card").on("dblclick", function () {
     let id = $(this).attr("id");
     openModal(id);
+    $(".modal-content").css({ opacity: "1" });
   });
   $(".modal-open").on("click", function () {
     let id = $(this).parent().parent().attr("id");
     openModal(id);
+    $(".modal-content").css({ opacity: "1" });
   });
   $(".modal-close").on("click", function () {
     let id = $(".servicios-card").attr("id");
     $(".modal-content").css({ opacity: "0" });
     closeModal();
   });
-  $(".modal").on("mouseenter", function () {
-    $(".modal-content").css({ opacity: "1" });
-  });
-  $(".modal").on("mouseleave", function () {});
 }
 
 function openModal(id) {

@@ -12,6 +12,10 @@
     padding: 3rem 5rem;
     color: v.$azulO;
 
+    @include m.telefono {
+    padding: 2rem;
+    }
+
     h3{
       margin-bottom: 2rem;
     }

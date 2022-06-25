@@ -4,6 +4,12 @@
 .main_contacto {
   margin: 3% 7%;
   color: v.$rosa;
+  @include m.telefono {
+    h1 {
+      font-size: 3rem !important;
+      word-break: break-all;
+    }
+  }
   .contacto {
     display: grid;
     grid-template-columns: 30% 65%;
@@ -11,10 +17,19 @@
     margin: 0 3%;
     height: 70rem;
 
-    @include m.tablet{
-      @include m.grid(1,5%);
-      p{
+    @include m.tablet {
+      @include m.grid(1, 5%);
+      width: 100%;
+
+      p {
         display: none;
+      }
+    }
+
+    @include m.telefono {
+      h3 {
+        font-size: 2rem;
+        word-break: break-all;
       }
     }
 
@@ -43,7 +58,7 @@
         }
         a {
           text-decoration: underline;
-            transition: all .5s;
+          transition: all 0.5s;
           &:hover {
             color: v.$rosa;
           }
@@ -53,8 +68,8 @@
       .redes-content {
         @include m.grid(2, 5%);
 
-        .bg-img{
-            padding: 5% 10%;
+        .bg-img {
+          padding: 5% 10%;
         }
 
         .redes-fb {
@@ -85,7 +100,7 @@
 
     &:hover {
       box-shadow: 15px 20px 10px 10px rgba(0, 0, 0, 0.5);
-      opacity: .95;
+      opacity: 0.95;
     }
   }
 }

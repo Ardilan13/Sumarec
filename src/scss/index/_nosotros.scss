@@ -1,5 +1,5 @@
 @use "base/variables" as v;
-@use 'base/mixins' as m;
+@use "base/mixins" as m;
 
 .nosotros {
   display: flex;
@@ -7,9 +7,10 @@
   gap: 15%;
   align-items: center;
 
-  @include m.tablet{
+  @include m.tablet {
     flex-direction: column;
     gap: 5rem;
+    padding: 5%;
   }
 
   .text {
@@ -30,14 +31,14 @@
   picture {
     width: 100%;
 
-    @include m.tablet{
+    @include m.tablet {
       width: 60%;
     }
   }
 
   &:hover {
     .text h2 {
-      border-bottom: .7rem solid v.$rosa;
+      border-bottom: 0.7rem solid v.$rosa;
     }
   }
 }
