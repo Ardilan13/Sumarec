@@ -12,6 +12,13 @@ function turn_carrusel() {
       x = x + 1500;
     }
   });
+  $(".menu").click(function () {
+    if ($(".menu-hide").is(":visible")) {
+      $(".menu-hide").hide();
+    } else {
+      $(".menu-hide").show();
+    }
+  });
 }
 
 function carrusel_cards() {
@@ -64,21 +71,17 @@ function modal() {
   $(".servicios-card").on("dblclick", function () {
     let id = $(this).attr("id");
     openModal(id);
+    $(".modal-content").css({ opacity: "1" });
   });
   $(".modal-open").on("click", function () {
     let id = $(this).parent().parent().attr("id");
     openModal(id);
+    $(".modal-content").css({ opacity: "1" });
   });
   $(".modal-close").on("click", function () {
     let id = $(".servicios-card").attr("id");
-    $(".modal-content").css({opacity: "0"});
+    $(".modal-content").css({ opacity: "0" });
     closeModal();
-  });
-  $(".modal").on("mouseenter", function () {
-    $(".modal-content").css({opacity: "1"});
-  });
-  $(".modal").on("mouseleave", function () {
-    
   });
 }
 
@@ -93,9 +96,18 @@ function openModal(id) {
   $(".modal-content h2").text(title);
   $(".modal-content svg").html(svg);
   $(".modal-content p").text(text);
-  $(".modal-content .modal-avif").attr("srcset", "build/img/servicios/"+id+".avif");
-  $(".modal-content .modal-webp").attr("srcset", "build/img/servicios/"+id+".webp");
-  $(".modal-content .modal-png").attr({"src": "build/img/servicios/"+id+".png", "alt": title});
+  $(".modal-content .modal-avif").attr(
+    "srcset",
+    "build/img/servicios/" + id + ".avif"
+  );
+  $(".modal-content .modal-webp").attr(
+    "srcset",
+    "build/img/servicios/" + id + ".webp"
+  );
+  $(".modal-content .modal-png").attr({
+    src: "build/img/servicios/" + id + ".png",
+    alt: title,
+  });
 }
 
 function closeModal() {

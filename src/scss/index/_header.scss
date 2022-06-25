@@ -28,9 +28,75 @@ header {
         border-bottom: 0.4rem solid v.$blanco;
       }
     }
+  }
 
-    .active {
-      border-bottom: 0.4rem solid v.$blanco;
-    }
+  .menu {
+    display: none;
+  }
+
+  .active {
+    border-bottom: 0.4rem solid v.$blanco;
+  }
+}
+
+.menu-hide a{
+  transition: all ease .5s;
+}
+
+.menu-hide a:hover {
+  background-color: v.$blanco;
+  color: v.$rosa;
+}
+
+.active-hide {
+  background-color: v.$blanco;
+  color: v.$rosa !important;
+}
+
+@include m.tablet {
+  .logo {
+    width: 12rem !important;
+    height: 6rem;
+  }
+  .menu {
+    display: block !important;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .menu:hover {
+    background-color: lightgray;
+  }
+  .menu-hide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: v.$azulO;
+    width: 100%;
+    padding: 0.5% 0;
+  }
+  .menu-hide ul {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .menu-hide li {
+    list-style: none;
+    width: 100%;
+  }
+  .nav_a-hide {
+    width: 100%;
+  }
+  .menu-hide a {
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    padding: 3% 0;
+    font-size: x-large;
+    font-weight: 700;
+    color: v.$blanco;
+  }
+  header nav {
+    display: none !important;
   }
 }
