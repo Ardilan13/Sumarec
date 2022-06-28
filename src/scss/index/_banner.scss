@@ -53,7 +53,7 @@
         margin-left: -1%;
         @include m.desktop{
           margin-left: -2%;    
-          background:  rgba(0, 0, 0, 0.77) url(../img/banner1cel.webp);
+          background:  rgba(0, 0, 0, 0.77) url(../imgBanner1cel.webp);
           background-size: cover;
           background-position-x: center;  
           background-blend-mode: darken;
@@ -138,7 +138,7 @@
         height: 100%;
         width: 100%;
         @include m.desktop{
-          background:  rgba(0, 0, 0, 0.77) url(../img/banner3cel.webp);
+          background:  rgba(0, 0, 0, 0.77) url(../img/Banner3cel.webp);
           background-size: cover;
           background-position-x: center; 
           background-blend-mode: darken;
@@ -256,7 +256,7 @@
         height: 100%;
         width: 100%;
         @include m.desktop{
-          background:  rgba(0, 0, 0, 0.77) url(../img/banner2cel.webp);
+          background:  rgba(0, 0, 0, 0.77) url(../img/Banner2cel.webp);
           background-size: cover;
           background-position-x: center;
           background-blend-mode: darken; 
